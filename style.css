@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Ubuntu+Mono&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #1C315E; 
+    background-image: url("images/bg-img.png");
+    color: white;
+    overflow: hidden;
+}
+
+.sidebar{
+    position: absolute;
+    background-color: rgb(18, 12, 45);
+    /* width: 350px; */
+    font-family: 'Fira Sans', sans-serif;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+}
+
+.sidebar nav{
+    padding: 3rem;
+}
+
+.sidebar nav li{
+    list-style: none;
+    font-size: 1.25rem;
+    padding: 2rem 0;
+}
+
+.sidebar nav li a{
+    text-decoration: none;
+    color: white;
+}
+
+/* .navbar{
+    background-color: rgb(195, 195, 69);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-nav{
+    display: flex;
+    margin-right: 6rem;
+}
+
+.nav-item{
+    list-style: none;
+    margin: 2rem 3rem;
+}
+
+.nav-item a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    color: white ;
+} */
+
+.main{
+    /* background-color: yellow; */
+    width: 85vw;
+    /* margin-left: 6rem; */
+    /* padding: 2rem; */
+}
+
+.container{
+    display: flex;
+}
+
+.infoContainer{
+    /* background-color: palegreen; */
+    height: 60vh;
+    width: 75vw;
+    margin: 9rem auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.hello{
+    font-size: 2rem;
+}
+
+.name{
+    font-size: 6rem ;
+    /* font-weight: 900; */
+    margin-left: -0.45rem;
+    /* font-family: 'Poppins', sans-serif;   */
+}
+
+.about{
+    font-size: 2.5rem;
+}
+
+.moreAbout{
+    margin-top: 1.25rem;
+    font-size: 1.25rem;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.buttons{
+    margin-top: 2rem;
+}
+
+.btn{
+    padding: .5rem 1rem;
+    border-radius: 1.2rem;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 0 0.25rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.btn-sm{
+    font-size: 0.6rem;
+    margin: 0.6rem 0;
+}
+
+.devPic img{
+    height: 60vh;
+}
+
+/* Designing form.html file */
+.contact-form{
+    padding: 0 2.5rem;
+    /* padding-top: 130px; */
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.contact-form h1{
+    font-family: 'Source Code Pro', monospace;
+    padding-bottom: 0.7rem;
+}
+
+.contact-form form div{
+    padding: 0.7rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form form div input{
+    width: 20vw;
+    border-radius: .3rem;
+    margin: .4rem 0 0 0;
+    padding: .2rem;
+}
+
+#emailHelp{
+    font-size: 0.6rem;
+    color: rgb(155, 155, 233);
+}
+
+#form-check{
+    flex-direction: row;
+}
+
+#form-check input{
+    width: 1.5rem;
+    margin: .2rem 0;
+}
+
+/* .bg-img {
+    width: 100vw;
+
+    object-fit: cover;
+} */
+
+.blog-item {
+    margin: 2rem;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+h1{
+    font-family: 'Fira Sans', sans-serif;
+    padding: 3rem 2rem  1.25rem 2rem;
+}
+
+p{
+    font-family: 'Source Code Pro', monospace;
+}
+
+/* Designing About page */
+
+.intro h2{
+    font-family: 'Fira Sans', sans-serif;
+    margin: 1.25rem;
+
+}
+
+.intro p{
+    font-family: 'Source Code Pro', monospace;
+    margin: 1.25rem;
+}
+
+.skill-container{
+    padding: 1.25rem;
+}
+
+.progress-bar{
+    margin-left: 3rem;
+}
+
+/* hamburger */
+.hamburger{
+    position: absolute;
+    top: .6rem;
+    left: .6rem;
+    cursor: pointer;
+}
+
+.ham{
+    width: 1.5rem;
+    margin-top: .6rem;
+}
+
+.cross{
+    width: 1.7rem;
+    margin-top: .6rem;
+    margin-left: 8rem;
+}
+
+.sidebar-go{
+    transform: translate(-22rem, 0);
+    position: absolute;
+}
+
+
+/* Making this site responsive */
+
+@media (max-width: 565px){
+    /* .sidebar{
+        transform: translate(-350px, 0);
+        position: absolute;
+    } */
+
+    .name{
+        font-size: 3rem;
+    }
+    .hello{
+        font-size: 1rem;
+    }
+    .about{
+        font-size: 1rem;
+    }
+
+    .buttons{
+        margin-top: 1rem;
+    }
+
+    .btn{
+        padding: .25rem .5rem;
+        font-size: .8rem;
+        margin: 0 0.25rem;
+        cursor: pointer;
+    }
+
+    .infoContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 6rem;
+        margin-left: 3rem;
+    }
+
+    .devPic{
+        margin-top: 2.2rem;
+    }
+
+
+
+}
